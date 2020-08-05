@@ -21,7 +21,7 @@ const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWOR
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose
   .connect(uri, options)
-  .then(() => app.listen(3000, console.log("Server is running")))
+  .then(() => app.listen(3000, console.log("Server is up and running!")))
   .catch((error) => {
     throw error;
   });
